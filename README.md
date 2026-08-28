@@ -1,1 +1,1 @@
-# -Enero-Gianne-Trixie-G.-CMSC-3-Programming-Exercises-AY-2026-2027
+# Enero-Gianne-Trixie-G.-CMSC-3-Programming-Exercises-AY-2026-2027
