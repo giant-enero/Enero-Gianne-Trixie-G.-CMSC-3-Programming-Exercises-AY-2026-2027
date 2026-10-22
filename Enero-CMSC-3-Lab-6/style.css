@@ -1,0 +1,50 @@
+/* External CSS for Gianne Trixie Enero's Personal Profile */
+
+/* Element selectors */
+body {
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+h3 {
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul {
+    margin: 20px;
+}
+
+a {
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* Class Selector */
+.intro {
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ID Selector */
+#fun-facts {
+    background-color: lightblue;
+}
+
+/* Group Selector */
+h1, h2 {
+    font-family: Arial, sans-serif;
+}
+
+/* Descendant Selector */
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Pseudo-class Selector */
+a:hover {
+    color: red;
+}
