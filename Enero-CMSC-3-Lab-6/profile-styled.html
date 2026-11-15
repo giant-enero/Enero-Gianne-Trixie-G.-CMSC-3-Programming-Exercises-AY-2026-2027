@@ -1,103 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Gianne Trixie Enero - My Personal Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gianne Trixie Enero | Personal Profile</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
-
+    
     <!-- Internal CSS -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: lightyellow;
-            margin: 20px;
-        }
-
-        h1 {
-            color: darkblue; 
-            text-align: center;
-            font-size: 32px;
-        }
-
-        h2 {
-            color: darkblue;
-            text-align: center;
-        }
-
-        h3 {
-            color: darkblue;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        ul {
-            line-height: 1.8;
-        }
-
-        hr {
-            border: 1px solid gray;
-        }
-
-        a {
-            text-decoration: none;
-        }
+    ::selection {
+        background-color: #00e5ff;
+        color: #050b18;
+    }
     </style>
 </head>
 
 <body>
 
-    <h1>My Personal Profile</h1>
+    <header class="hero">
+        <div class="system-label">PERSONAL PROFILE SYSTEM // 11930</div>
 
-    <hr>
-
-    <!-- Inline CSS -->
-    <h2 style="font-size: 26px;">Gianne Trixie Enero</h2>
-
-    <p class="intro">
-        Hello! My name is 
-        
         <!-- Inline CSS -->
-        <strong style="color: darkblue;">Gianne Trixie Enero</strong>. 
-        I am currently studying <em>Computer Science</em> at University of the Philippines Mindanao.
-    </p>
+        <h1 style="letter-spacing: 6px;">MY PERSONAL PROFILE</h1>
 
-    <hr>
+        <div class="hero-line"></div>
 
-    <h3>About Me</h3>
+        <h2>Gianne Trixie Enero</h2>
 
-    <ul>
-        <li>My program/course: <strong>BS Computer Science</strong></li>
-        <li>My interests: <em>Music and Video Games</em></li>
-        <li>My hobbies: <em>Playing Guitar and Learning Languages</em></li>
-        <li>Something I enjoy doing: 
-            <!-- Inline CSS -->
-            <mark style="background-color: lightblue;">Doing anything related to music</mark>
-        </li>
-        <li>Something I want to learn: <u>I want to learn more about web development and programming.</u></li>
-        <li>
-            Something I would like others to know about me:
-            I am an ambivert, which means I love talking to people, but there are also times that I don't want to. 
-            I still need quiet time to recharge after a long social interaction.
-        </li>
-    </ul>
-
-    <hr>
-
-    <h3 id="fun-facts">Fun Facts About Me</h3>
-        <p>
-            I am <b>curious person</b> and I enjoy learning new things.
-            One of my goals is to become a polyglot.
-            I have an interest in <em>anything related to music, videogames, and learning new languages</em>.
+        <p class="subtitle">
+            COMPUTER SCIENCE STUDENT | MUSIC ENTHUSIAST | LANGUAGE LEARNER
         </p>
 
-    <p>
-        You can learn more about something related to my interests here:
-        <a href="https://playvalorant.com/en-gb/" target="_blank">Video Game I Like</a>
-    </p>
+        <nav>
+            <a href="#about">ABOUT ME</a>
+            <a href="#personal-info">PERSONAL INFO</a>
+            <a href="#fun-facts">FUN FACTS</a>
+            <a href="#interests">MY INTERESTS</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="about" class="profile-card">
+            <div class="section-label">01 // INTRODUCTION</div>
+
+            <h3>About Me</h3>
+
+            <p class="intro">
+                Hello! My name is <strong>Gianne Trixie Enero</strong>.
+                I am currently studying <em>Computer Science</em> at the
+                University of the Philippines Mindanao.
+                I enjoy exploring different interests, 
+                learning new skills, and 
+                discovering new things.
+            </p>
+        </section>
+
+        <section id="personal-info" class="profile-card">
+            <div class="section-label">02 // PERSONAL INFORMATION</div>
+
+            <h3>Get to Know Me</h3>
+
+            <ul class="info-list">
+                <li>
+                    <strong>My Program/Course:</strong>
+                    BS Computer Science
+                </li>
+
+                <li>
+                    <strong>My Interests:</strong>
+                    Music and Video Games
+                </li>
+
+                <li>
+                    <strong>My Hobbies:</strong>
+                    Playing Guitar and Learning Languages
+                </li>
+
+                <li>
+                    <strong>Something I Enjoy:</strong>
+                    <mark>Doing anything related to music</mark>
+                </li>
+
+                <li>
+                    <strong>Something I Want to Learn:</strong>
+                    I want to learn more about web development
+                    and programming.
+                </li>
+
+                <li>
+                    <strong>Something I Would Like Others
+                    to Know About Me:</strong>
+                    I am an ambivert, which means I love
+                    talking to people, but there are also
+                    times that I don't want to. I still need
+                    quiet time to recharge after a long
+                    social interaction.
+                </li>
+            </ul>
+        </section>
+
+        <section id="fun-facts" class="profile-card">
+            <div class="section-label">03 // EXTRA INFORMATION</div>
+
+            <h3>Fun Facts About Me</h3>
+
+            <p>
+                <span class="first-sentence">
+                    I am a curious person and I enjoy learning new things. 
+                </span>
+                One of my goals is to become a polyglot. 
+                I have an interest in anything related to music, 
+                video games, and learning new languages.
+            </p>
+
+            <br>
+
+            <p><strong>Languages I Speak and Am Learning:</strong></p>
+
+            <ul class="info-list">
+                <li><strong>Fluent:</strong> English, Filipino, Bisaya</li>
+                <li><strong>Beginner:</strong> Japanese, Russian</li>
+                <li><strong>Learning:</strong> Korean, French</li>
+            </ul>
+
+        </section>
+
+        <section id="interests" class="profile-card interest-card">
+            <div class="section-label">04 // EXPLORE MY INTERESTS</div>
+
+            <h3>Things I Enjoy</h3>
+
+            <p>
+                One of the video games I enjoy is Valorant.
+                You can visit its official website through
+                the link below.
+            </p>
+
+            <!-- Ultimate Fav Game -->
+            <a class="game-link"
+               href="https://playvalorant.com/en-gb/"
+               target="_blank"
+               rel="noopener noreferrer">
+                EXPLORE VALORANT
+                <span> ↗</span>
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-line"></div>
+
+        <!-- Sheesh -->
+        <p>© 2026 GIANNE TRIXIE ENERO</p>
+        <p class="footer-subtitle">
+            END OF PROFILE TRANSMISSION_
+        </p>
+    </footer>
 
 </body>
 </html>

@@ -1,50 +1,335 @@
-/* External CSS for Gianne Trixie Enero's Personal Profile */
+/* ========================
+   Updated External CSS :>
+   ======================== */
 
-/* Element selectors */
+/* Color Palette */
+:root {
+    --background: #050b18;
+    --card: #0c1930;
+    --card-light: #102544;
+    --blue: #168cff;
+    --cyan: #00e5ff;
+    --text: #e4f2ff;
+    --muted: #8ba9c9;
+    --border: #164a7a;
+}
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
-    padding: 20px;
-    border: 2px solid gray;
-    border-radius: 10px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:
+        radial-gradient(ellipse at top, #102c50, transparent 55%),
+        var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 30px 20px;
+    line-height: 1.7;
 }
 
-h3 {
-    background-color: lightblue;
-    padding: 10px;
-    border-radius: 5px;
+/* Hero Section */
+.hero {
+    text-align: center;
+    max-width: 950px;
+    margin: 30px auto 45px;
+    padding: 45px 20px;
 }
 
-ul {
-    margin: 20px;
-}
-
-a {
-    color: darkblue;
+.system-label,
+.section-label {
+    color: var(--cyan);
+    font-size: 12px;
     font-weight: bold;
+    letter-spacing: 3px;
 }
 
-/* Class Selector */
-.intro {
-    background-color: lightblue;
-    padding: 10px;
-    border-radius: 5px;
+h1 {
+    color: white;
+    font-size: clamp(30px, 5vw, 48px);
+    letter-spacing: 4px;
+    text-shadow: 0 0 15px var(--blue);
+    margin-bottom: 10px;
 }
 
-/* ID Selector */
-#fun-facts {
-    background-color: lightblue;
+.hero-line,
+.footer-line {
+    width: 120px;
+    height: 3px;
+    background: var(--cyan);
+    margin: 20px auto;
+    box-shadow: 0 0 15px var(--cyan);
 }
 
-/* Group Selector */
-h1, h2 {
-    font-family: Arial, sans-serif;
-}
-
-/* Descendant Selector */
-ul li {
+.hero h2 {
+    color: var(--cyan);
+    font-size: 28px;
+    letter-spacing: 2px;
     margin-bottom: 5px;
 }
 
-/* Pseudo-class Selector */
-a:hover {
-    color: red;
+.subtitle {
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 2px;
 }
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 9px 18px;
+    border-radius: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: var(--blue);
+    border-color: var(--cyan);
+    color: white;
+    box-shadow: 0 0 15px var(--blue);
+    transform: translateY(-3px);
+}
+
+/* Main Content */
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* Profile Cards */
+.profile-card {
+    background: linear-gradient(
+        145deg,
+        var(--card-light),
+        var(--card)
+    );
+
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--blue);
+    border-radius: 10px;
+
+    padding: 30px;
+    margin-bottom: 25px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    border-left-color: var(--cyan);
+    box-shadow: 0 0 20px rgba(0, 145, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Headings */
+h3 {
+    color: var(--cyan);
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+    color: var(--text);
+}
+
+/* Intro Paragraph */
+.intro {
+    background: rgba(0, 145, 255, 0.08);
+    border-left: 3px solid var(--cyan);
+    padding: 18px;
+    border-radius: 5px;
+}
+
+.intro strong {
+    color: var(--cyan);
+}
+
+/* Information List */
+.info-list {
+    padding-left: 22px;
+}
+
+.info-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(22, 140, 255, 0.2);
+}
+
+.info-list li::marker {
+    color: var(--cyan);
+}
+
+.info-list strong {
+    color: #66baff;
+}
+
+/* Highlighted Text */
+mark {
+    background: rgba(0, 229, 255, 0.2);
+    color: var(--cyan);
+    padding: 3px 7px;
+    border-radius: 4px;
+}
+
+/* Fun Facts */
+#fun-facts {
+    border-left-color: var(--cyan);
+}
+
+.first-sentence {
+    color: #66baff;
+}
+
+/* Target Pseudo-class */
+.profile-card:target {
+    border-color: var(--cyan);
+    box-shadow: 0 0 22px rgba(0, 229, 255, 0.35);
+    scroll-margin-top: 40px;
+}
+
+/* Game Link */
+.game-link {
+    display: inline-block;
+    background: linear-gradient(90deg, #0878df, #00aaff);
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 22px;
+    margin-top: 10px;
+
+    border: 1px solid var(--cyan);
+    border-radius: 5px;
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.game-link:hover {
+    background: var(--cyan);
+    color: var(--background);
+    box-shadow: 0 0 20px var(--cyan);
+}
+
+.game-link:active {
+    transform: scale(0.96);
+}
+
+/* Focus Pseudo-class */
+a:focus-visible {
+    outline: 2px solid var(--cyan);
+    outline-offset: 5px;
+}
+
+/* Attribute Selectors */
+a[href^="https://"] {
+    text-decoration: none;
+}
+
+a[target="_blank"] {
+    border-style: solid;
+}
+
+a[href*="valorant"] {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+a[href$="en-gb/"] {
+    border-bottom: 2px solid var(--cyan);
+}
+
+/* Pseudo-elements */
+h3::before {
+    content: "> ";
+    color: var(--blue);
+}
+
+h3::after {
+    content: " _";
+    color: var(--cyan);
+}
+
+.intro::first-letter {
+    color: var(--cyan);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Text Selection */
+::selection {
+    background: var(--cyan);
+    color: var(--background);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+footer p {
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.footer-line {
+    width: 80px;
+    height: 2px;
+}
+
+.footer-subtitle {
+    color: var(--cyan);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .hero {
+        padding: 25px 10px;
+    }
+
+    .profile-card {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    .subtitle {
+        line-height: 2;
+    }
+}
+
+/* Sheesh */
